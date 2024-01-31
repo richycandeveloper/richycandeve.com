@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    background:url('./img/background\ img.jpg')  center/cover no-repeat;
+    overflow: hidden; 
+    animation: moveBackground 20s linear infinite; 
+  }
+  @keyframes moveBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    color: #f4f4f4;
+  }
+  
+  label {
+    margin-right: 10px;
+    display: block;
+    color: #f4f4f4;
+    
+}
+  
+  
+  input {
+    
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%; /* Make the input field full width */
+    box-sizing: border-box;
+   
+  }
+    
+  
+  
+  button {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100%; /* Make the button full width */
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #output {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color:#ffff;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #333;
+  }
+  /* Media queries for responsiveness */
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+  input, button {
+    width: 50%; /* Adjust width for tablet screens */
+  }
+}
+
+/* Laptop and larger screens */
+@media only screen and (min-width: 992px) {
+  input, button {
+    width: 30%; /* Adjust width for larger screens */
+  }
+}
